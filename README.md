@@ -29,7 +29,7 @@ npm run build
 ## 页面展示
 
 <p align="center">
-	<img style="border: 1px solid #888" src="https://raw.githubusercontent.com/beautifulBoys/beautifulBoys.github.io/master/source/bullet/show.jpg"/>
+	<img style="border: 1px solid #888" src="https://raw.githubusercontent.com/beautifulBoys/beautifulBoys.github.io/master/source/bullet/show.png"/>
 </p>
 
 ## 后台配置相关
