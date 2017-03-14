@@ -11,6 +11,8 @@ var bullet = require('./server.js');
 
 var app = express();
 
+// mongoose.connect('mongodb://192.168.175.115/lixinDb');
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

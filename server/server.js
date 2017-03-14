@@ -2,7 +2,7 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-//var Bullet = require('../schemas/bullet.js'); // 数据库处理
+//var Bullet = require('./schemas/bullet.js'); // 数据库处理
 
 function sock() {
     io.on('connection', function (socket) {
@@ -21,7 +21,7 @@ function sock() {
                 console.log('有人联入');
             });
 
-*/            
+*/
         });
 
         //监听用户退出
@@ -32,16 +32,16 @@ function sock() {
 
         //监听用户发送弹幕
         socket.on('message', function (obj) {
-            
-    /*	        
+
+    /*
 			var me = this;
 			var bullet = new Bullet(obj);
 			bullet.save(function (err, bull) {
                 if (err) console.log(err);
                 console.log(bull);
             });
-	
-	*/        
+
+	*/
             socket.emit('messageSuccess', obj);   // 向自己推送
             me.broadcast.emit('message', obj); // 广播给自己以外的所有用户
             console.log('有人发送弹幕了:' + obj.content);
