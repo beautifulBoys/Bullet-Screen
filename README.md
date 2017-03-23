@@ -4,7 +4,7 @@
 
 ## 项目预览
 
-(点我在线预览)[https://beautifulboys.github.io/html/example/bullet/]
+[点我在线预览](https://beautifulboys.github.io/html/example/bullet/)
 
 ## 项目安装及运行
 
