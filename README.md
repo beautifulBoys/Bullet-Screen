@@ -2,6 +2,10 @@
 
 > 这是Node.js 学习的一个小例子，仿照哔哩哔哩弹幕网做的一个弹幕系统。包括前台、后台、以及数据库的部分。
 
+## 项目预览
+
+(点我在线预览)[https://beautifulboys.github.io/html/example/bullet/]
+
 ## 项目安装及运行
 
 ``` bash
