@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -11,7 +12,7 @@ var bullet = require('./server.js');
 
 var app = express();
 
-// mongoose.connect('mongodb://192.168.175.115/lixinDb');
+mongoose.connect('mongodb://10.209.96.67/lixinDb');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

@@ -122,13 +122,14 @@
     methods: {
       connect () {
         var me = this;
-        this.httpServer = io.connect('http://192.168.175.103:3001'); // 后台IP地址及端口号 （自己电脑的ip）
+        this.httpServer = io.connect('http://10.209.96.67:3001'); // 后台IP地址及端口号 （自己电脑的ip）
 
         this.httpServer.emit('login');
         this.httpServer.on('loginSuccess', function (list) {
           if (list) {
             console.log('连接好了');
             me.list = list;
+            console.log(list);
             me.scrollBullet();// 播放弹幕
           }
         });
@@ -383,4 +384,3 @@
     height: calc(100% - 38px);
   }
 </style>
-
